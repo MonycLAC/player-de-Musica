@@ -2,20 +2,20 @@ let musicas = [
     {
         titulo: 'CORAÇÃO PARTIDO - ELA JOGA NO 7',
         artista: 'Netto Britto',
-        src: 'Musicas/11 - CORAÇÃO PARTIDO - ELA JOGA NO 7.mp3',
-        img: 'Imagens/andrew-varnum-nbdVeCABFeU-unsplash.jpg'
+        src: '11 - CORAÇÃO PARTIDO - ELA JOGA NO 7.mp3',
+        img: 'andrew-varnum-nbdVeCABFeU-unsplash.jpg'
     },
     {
         titulo: 'VOCÊ NÃO VER',
         artista: 'Netto Britto',
-        src: 'Musicas/02 - VOCÊ NÃO VÊ - LÁBIOS DIVIDIDOS.mp3',
-        img: 'Imagens/kenny-gaines-U-d828ayEdw-unsplash.jpg'
+        src: '02 - VOCÊ NÃO VÊ - LÁBIOS DIVIDIDOS.mp3',
+        img: 'kenny-gaines-U-d828ayEdw-unsplash.jpg'
     },
     {
         titulo: 'DEPOIS DE MIM',
         artista: 'Netto Britto',
-        src: 'Musicas/12 - DEPOIS DE MIM.mp3',
-        img: 'Imagens/kenny-gaines-YScLVuOv7nU-unsplash.jpg'
+        src: '12 - DEPOIS DE MIM.mp3',
+        img: 'kenny-gaines-YScLVuOv7nU-unsplash.jpg'
     }
 ];
 
