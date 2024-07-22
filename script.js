@@ -74,9 +74,9 @@ function pausarMusica() {
     document.querySelector('.botao-play').style.display = 'block';
 }
 
-function atualizarBarra() {
+function atualizarBarra(){
     let barra = document.querySelector('progress');
-    barra.value = musica.currentTime / musica.duration;
+    barra.style.width = Math.floor((musica.currentTime / musica.duration) * 100) + '%';
     let tempoDecorrido = document.querySelector('.inicio');
     tempoDecorrido.textContent = segundosParaMinutos(Math.floor(musica.currentTime));
 }
