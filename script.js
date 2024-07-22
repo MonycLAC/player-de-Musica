@@ -8,7 +8,7 @@ let musicas = [
     {
         titulo: 'VOCÊ NÃO VER',
         artista: 'Netto Britto',
-        src: 'Musicas/02 - VOCÊ NÃO VÊ - LÁBIOS DIVIDIDOS.mp3',
+        src: '02 - VOCÊ NÃO VÊ - LÁBIOS DIVIDIDOS.mp3',
         img: 'Imagens/kenny-gaines-U-d828ayEdw-unsplash.jpg'
     },
     {
