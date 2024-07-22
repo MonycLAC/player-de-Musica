@@ -2,20 +2,20 @@ let musicas = [
     {
         titulo: 'CORAÇÃO PARTIDO - ELA JOGA NO 7',
         artista: 'Netto Britto',
-        src: '11 - CORAÇÃO PARTIDO - ELA JOGA NO 7.mp3',
-        img: 'andrew-varnum-nbdVeCABFeU-unsplash.jpg'
+        src: 'Musicas/11 - CORAÇÃO PARTIDO - ELA JOGA NO 7.mp3',
+        img: 'Imagens/andrew-varnum-nbdVeCABFeU-unsplash.jpg'
     },
     {
         titulo: 'VOCÊ NÃO VER',
         artista: 'Netto Britto',
-        src: '02 - VOCÊ NÃO VÊ - LÁBIOS DIVIDIDOS.mp3',
-        img: 'kenny-gaines-U-d828ayEdw-unsplash.jpg'
+        src: 'Musicas/02 - VOCÊ NÃO VÊ - LÁBIOS DIVIDIDOS.mp3',
+        img: 'Imagens/kenny-gaines-U-d828ayEdw-unsplash.jpg'
     },
     {
         titulo: 'DEPOIS DE MIM',
         artista: 'Netto Britto',
-        src: '12 - DEPOIS DE MIM.mp3',
-        img: 'kenny-gaines-YScLVuOv7nU-unsplash.jpg'
+        src: 'Musicas/12 - DEPOIS DE MIM.mp3',
+        img: 'Imagens/kenny-gaines-YScLVuOv7nU-unsplash.jpg'
     }
 ];
 
@@ -54,9 +54,7 @@ function renderizarMusica(index) {
     nomeArtista.textContent = musicas[index].artista;
     imagem.src = musicas[index].img;
     musica.src = musicas[index].src;
-    duracaoMusica.textContent = '0:00';
 
-    // Adicionar evento 'loadedmetadata' para atualizar a duração
     musica.addEventListener('loadedmetadata', () => {
         duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
     });
@@ -76,9 +74,9 @@ function pausarMusica() {
     document.querySelector('.botao-play').style.display = 'block';
 }
 
-function atualizarBarra(){
+function atualizarBarra() {
     let barra = document.querySelector('progress');
-    barra.style.width = Math.floor((musica.currentTime / musica.duration) * 100) + '%';
+    barra.value = musica.currentTime / musica.duration;
     let tempoDecorrido = document.querySelector('.inicio');
     tempoDecorrido.textContent = segundosParaMinutos(Math.floor(musica.currentTime));
 }
@@ -100,6 +98,3 @@ function proximaMusica() {
     renderizarMusica(indexMusica);
     tocarMusica();
 }
-
-// Inicializar a primeira música
-renderizarMusica(indexMusica);
