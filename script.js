@@ -75,10 +75,10 @@ function pausarMusica() {
 }
 
 function atualizarBarra() {
-    let barra = document.querySelector('progress');
-    barra.value = musica.currentTime / musica.duration;
-    let tempoDecorrido = document.querySelector('.inicio');
-    tempoDecorrido.textContent = segundosParaMinutos(Math.floor(musica.currentTime));
+    if (musica.duration) { // Verifica se a duração da música está disponível
+        barra.value = musica.currentTime; // Atualiza o valor da barra
+        tempoDecorrido.textContent = segundosParaMinutos(Math.floor(musica.currentTime));
+    }
 }
 
 function segundosParaMinutos(segundos) {
